@@ -21,6 +21,10 @@ export default () => {
     );
   }, []);
 
+  React.useEffect(() => {
+    store.clearStrapiUser()
+  }, [])
+
   return (
     <>
       <input type="text" ref={email} placeholder="email"/>

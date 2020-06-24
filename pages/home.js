@@ -28,7 +28,7 @@ export default () => {
       debugger;
       webClient(
         "http://localhost:1337/todos",
-        { todoText: todo.current.value, user: { id: user.user.id } },
+        { todoText: todo.current.value },
         (_) => {
           webClient("http://localhost:1337/todos", {}, setTodos, "get");
         }
